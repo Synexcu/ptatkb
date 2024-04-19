@@ -1,0 +1,397 @@
+---
+import "@/styles/globals.css";
+import MaxWidthWrapper from "../components/MaxWidthWrapper.astro";
+import Layout from "../layouts/Layout.astro";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { ContactUs } from "./api/ContactUs";
+import { Image } from "astro:assets";
+import { ChevronRight, User } from "lucide-react";
+import { cn } from "@/lib/utils";
+---
+
+<Layout title="Selamat datang di PT Anugrah Teknologi Kecerdasan Buatan">
+  <main>
+    <!-- Hero -->
+    <div class="bg-[url('/alt.jpg')] bg-no-repeat bg-right opacity-85">
+    <!-- <div class="bg-[url('/alt.png')] bg-no-repeat bg-right"> -->
+      <MaxWidthWrapper className="min-h-screen pt-20 flex">
+        <div
+          class="w-[50%] h-[calc(100vh-5rem)] pt-20 flex flex-col justify-center gap-4"
+        >
+          <div class="text-6xl text-white ">PT. Anugrah Teknologi Kecerdasan Buatan</div>
+          <div class="text-white">
+            Welcome to PT. Anugrah Teknologi Kecerdasan Buatan (PT. ATKB)!
+          We are a forward-thinking company dedicated to advancing the field of Artificial Intelligence (AI) 
+          and empowering businesses and individuals with cutting-edge solutions. 
+          Let’s dive into what makes us unique:
+          </div>
+          <div>
+            <Button className="bg-first hover:bg-first/50">
+              More About Us
+            </Button>
+          </div>
+        </div>
+      </MaxWidthWrapper>
+    </div>
+
+    <!-- About Us -->
+    <div class="min-h-screen flex items-center justify-center">
+      <!-- <Image
+        src={"/blob-haikei.png"}
+        width={750}
+        height={500}
+        alt="blob"
+        class="flex-shrink-0"
+      /> -->
+      <Image
+      src={"/businesswork.jpg"}
+      class="flex-shrink-0 object-cover h-full"
+      width={600}
+      height={200}
+      alt="Image by gpointstudio on Freepik"
+      class="flex-shrink-0"
+    />
+      <!-- <div class="grid grid-cols-5 grid-rows-2 grid-flow-col bg-black">
+        <div class="font-bold text-4xl col-span-1 row-span-1 bg-red-400">About Us</div>
+        <div class="col-span-3 row-span-1 bg-blue-400">
+          We are a forward-thinking IT consulting company based in Indonesia,
+          specializing in cutting-edge artificial intelligence (AI) technologies.
+          <br />
+          Our mission is to empower businesses and individuals by harnessing the power of A
+          to drive innovation, efficiency, and growth.
+        </div>
+      </div> -->
+
+      <div class="flex flex-col">
+        <div class="font-bold text-4xl">About Us</div>
+        <br>
+        <div>
+          We are a forward-thinking IT consulting company based in Indonesia,
+          specializing in cutting-edge artificial intelligence (AI) technologies.
+          <br />
+          Our mission is to empower businesses and individuals by harnessing the power of A
+          to drive innovation, efficiency, and growth.
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="min-h-screen flex items-center bg-second">
+      <MaxWidthWrapper className="flex flex-col gap-12">
+        <div class="flex flex-col">
+          <div class="text-first text-xl">Services</div>
+          <div class="font-bold text-4xl">Provided Services</div>
+        </div>
+        <div class="grid grid-cols-3 gap-14">
+          <div
+            class="bg-white flex flex-col gap-4 px-8 py-16 rounded-2xl items-center"
+          >
+            <div class="w-20 h-20">
+              <img src="/website.svg">
+            </div>
+            <div class="text-first text-2xl font-bold text-center">
+              Web Development
+            </div>
+            <div class="text-center">
+              Our skilled team of developers creates dynamic, user-friendly websites tailored to your specific needs.
+            </div>
+          </div>
+          <div
+            class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
+          >
+            <div class="w-20 h-20">
+              <img src="/courses.svg">
+            </div>
+            <div class="text-first text-2xl font-bold text-center">
+              IT Training
+            </div>
+            <div class="text-center">
+              We offer comprehensive IT training programs, 
+              equipping learners with the skills needed to thrive in a digital world.
+            </div>
+          </div>
+          <div
+            class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
+          >
+            <div class="w-20 h-20">
+              <img src="/research.svg">
+            </div>
+            <div class="text-first text-2xl font-bold text-center">
+              Research
+            </div>
+            <div class="text-center">
+              Our dedicated research team delves into the latest AI advancements,
+              exploring novel algorithms, applications, and breakthroughs.
+              We collaborate with industry partners, academic institutions to push the boundaries of what AI can achieve.
+            </div>
+          </div>
+          <div
+            class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
+          >
+            <div class="w-20 h-20">
+              <img src="/journal.svg">
+            </div>
+            <div class="text-first text-2xl font-bold text-center">
+              Journal Publishing
+            </div>
+            <div class="text-center">
+              We provide the support to help you Publish your hard-researched Journal and make it available to the world.
+            </div>
+          </div>
+          <div
+            class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
+          >
+            <div class="w-20 h-20">
+              <img src="/education.svg">
+            </div>
+            <div class="text-first text-2xl font-bold text-center">
+              Education Training
+            </div>
+            <div class="text-center">
+              We provide training and bootcamps especially for IT educations.
+              We are hoping to increase the amount of IT workforce and quality by doing this.
+            </div>
+          </div>
+          <div
+            class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
+          >
+            <div class="w-20 h-20">
+              <img src="/thesis.svg">
+            </div>
+            <div class="text-first text-2xl font-bold text-center">
+              Thesis Consultation
+            </div>
+            <div class="text-center">
+              Navigating the complexities of thesis writing?
+              Our experienced consultants provide guidance, feedback, and support throughout the thesis process. 
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-center">
+          <Button className="bg-first hover:bg-first/50 rounded-full px-12">
+            More Details
+          </Button>
+        </div>
+      </MaxWidthWrapper>
+    </div>
+
+    <!-- Projects -->
+    <div class="h-screen flex flex-row">
+      <div class="flex-[65] bg-first px-12 py-20">
+        <div class="flex flex-col gap-4">
+          <div class="text-7xl text-white">Our Projects</div>
+          <div class="text-white">
+            Throughout our journey, we’ve had the privilege of collaborating on various exciting ventures.
+            From innovative startups to established brands, our portfolio reflects our commitment to excellence.
+            Here’s a glimpse of some remarkable projects:
+          </div>
+          <div>
+            <Button
+              className="bg-second hover:bg-second/50 text-first flex justify-between"
+            >
+              <div>Read More</div>
+              <ChevronRight />
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-[127]">
+        <div class="px-32 h-full">
+          <div class="flex-col flex gap-8 justify-center h-full">
+            <div class="flex gap-4">
+              <div
+                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
+              >
+                Sep <br /> 2023
+              </div>
+              <div class="flex-shrink-0 rounded-md">
+                <Image
+                  src={"/PuskesmasKertasemaya.png"}
+                  alt="project1"
+                  width={125}
+                  height={500}
+                  class="rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-first text-2xl font-semibold">
+                  PUSKESMAS KERTASEMAYA
+                </div>
+                <div class="flex flex-1">
+                  At UPTD Puskesmas Kertasemaya, we’ve crafted a dynamic website with a clear mission: to enhance accessibility to essential health information for our local community.
+                  Our commitment lies in digitizing crucial services, ensuring residents can easily access our daily schedules, preventive measures, and community updates.
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
+              >
+                Nov <br /> 2023
+              </div>
+              <div class="flex-shrink-0 rounded-md">
+                <Image
+                  src={"/PuskesmasTerisi.png"}
+                  alt="project1"
+                  width={125}
+                  height={500}
+                  class="rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-first text-2xl font-semibold">
+                  PUSKESMAS TERISI
+                </div>
+                <div class="flex flex-1">
+                  Welcome to UPTD Puskesmas Terisi! Our commitment lies in bridging the gap between healthcare and technology, ensuring that essential health information reaches our local community with ease.
+                  <br> <br>    
+                  At Puskesmas Terisi, we believe that health should be accessible to all,
+                  regardless of physical boundaries. Our digital platform serves as a beacon,
+                  guiding residents toward better well-being.
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
+              >
+                01 <br /> Aug
+              </div>
+              <div class="flex-shrink-0 rounded-md">
+                <Image
+                  src={"/project3.jpeg"}
+                  alt="project1"
+                  width={125}
+                  height={500}
+                  class="rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-first text-2xl font-semibold">
+                  LOREM IPSUM SI AMET
+                </div>
+                <div class="flex flex-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima repellat, perspiciatis similique ipsam illo ipsum eum
+                  quam at, id provident aspernatur eaque numquam quidem sunt
+                  veniam soluta hic. Autem, minima?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="min-h-screen bg-[#C6D7E8]">
+      <div class="container py-12 flex flex-col gap-12">
+        <div class="flex flex-col">
+          <div class="text-[#326BA4] font-bold text-6xl">Testimonials</div>
+          <div class="flex justify-between">
+            <div class="flex-1 text-xl">
+              SEE WHAT OUR CUSTOMERS <br /> THINK ABOUT US
+            </div>
+            <div class="flex-1 text-right text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              provident optio quibusdam quisquam quas distinctio pariatur
+              maiores dignissimos, et a odit recusandae fugiat reprehenderit,
+              accusamus at asperiores? Corporis, aperiam tenetur?
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+          <div
+            class="flex flex-col bg-[#DFE6EC] rounded-md p-8 gap-4 border-b-8 border-[#326BA4] shadow-2xl"
+          >
+            <div class="text-[#326BA4] text-2xl font-bold">
+              &quot;LOREM UPSUM SI AMET&quot;
+            </div>
+            <div class="text-justify text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis ab nostrum minus repudiandae, libero, voluptates
+              dicta ullam magni atque laborum consequuntur dolorem voluptatibus
+              cumque enim totam porro inventore numquam architecto!
+            </div>
+            <div class="flex gap-4">
+              <div class="rounded-full bg-white p-2">
+                <User />
+              </div>
+              <div class="flex items-center">Kaede Nakamura</div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-[#DFE6EC] rounded-md p-8 gap-4 border-b-8 border-[#326BA4] shadow-2xl"
+          >
+            <div class="text-[#326BA4] text-2xl font-bold">
+              &quot;LOREM UPSUM SI AMET&quot;
+            </div>
+            <div class="text-justify text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis ab nostrum minus repudiandae, libero, voluptates
+              dicta ullam magni atque laborum consequuntur dolorem voluptatibus
+              cumque enim totam porro inventore numquam architecto!
+            </div>
+            <div class="flex gap-4">
+              <div class="rounded-full bg-white p-2">
+                <User />
+              </div>
+              <div class="flex items-center">Kaede Nakamura</div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-[#DFE6EC] rounded-md p-8 gap-4 border-b-8 border-[#326BA4] shadow-2xl"
+          >
+            <div class="text-[#326BA4] text-2xl font-bold">
+              &quot;LOREM UPSUM SI AMET&quot;
+            </div>
+            <div class="text-justify text-sm">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis ab nostrum minus repudiandae, libero, voluptates
+              dicta ullam magni atque laborum consequuntur dolorem voluptatibus
+              cumque enim totam porro inventore numquam architecto!
+            </div>
+            <div class="flex gap-4">
+              <div class="rounded-full bg-white p-2">
+                <User />
+              </div>
+              <div class="flex items-center">Kaede Nakamura</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full justify-center">
+          <Button
+            className="bg-[#326BA4] hover:bg-[#326BA4]/50 flex justify-between"
+          >
+            <div>Read More</div>
+            <ChevronRight />
+          </Button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="grid grid-rows-5 grid-cols-5 items-center gap-8 py-12 bg-[url('/indo.jpeg')] bg-cover text-white">
+      <div class="text-4xl font-bold row-span-1 col-span-1 col-start-3 text-center bg-black">Contact Us</div>
+      <div class="row-span-1 col-span-1 bg-red-500">Hello</div>
+      <!-- <div class="text-4xl font-bold">Contact Us</div>
+      <Input
+        placeholder="Name"
+        className={cn(
+          "max-w-lg bg-transparent border-t-0 border-x-0 rounded-none border-b-2 border-white placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
+        )}
+      />
+      <Input
+        placeholder="Email"
+        className="max-w-lg bg-transparent border-t-0 border-x-0 rounded-none border-b-2 border-white placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
+      />
+      <Textarea
+        placeholder="Message"
+        rows={5}
+        className="max-w-lg bg-transparent rounded-none border-2 border-white placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
+      /> -->
+    </div>
+  </main>
+</Layout>

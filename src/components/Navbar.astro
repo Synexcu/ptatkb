@@ -1,0 +1,21 @@
+---
+import MaxWidthWrapper from "./MaxWidthWrapper.astro";
+import { Image } from "astro:assets";
+---
+
+<nav class="h-20 bg-third z-30 shadow-lg w-full fixed">
+  <MaxWidthWrapper className="h-full">
+    <div class="flex justify-between items-center h-full">
+      <div class="flex justify-center items-center">
+        <Image src={"/logo.png"} width={300} height={300} alt="logo" />
+      </div>
+      <div class="flex gap-8">
+        <div>About</div>
+        <div>Service</div>
+        <div>Project</div>
+        <div>Testimonies</div>
+        <div>Contact</div>
+      </div>
+    </div>
+  </MaxWidthWrapper>
+</nav>

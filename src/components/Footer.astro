@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+---
+
+<div class="bg-second text-first">
+  <div class="container flex items-center justify-between py-12">
+    <div class="flex gap-4">
+      <div>
+        <Image src={"/logo.png"} width={300} height={100} alt="logo" />
+      </div>
+    </div>
+    <div class="flex gap-4">
+      <div>About</div>
+      <div>Service</div>
+      <div>Project</div>
+      <div>Testimonies</div>
+      <div>Contact</div>
+    </div>
+    <div class="flex gap-4">
+      <Facebook />
+      <Instagram />
+      <Twitter />
+      <Linkedin />
+    </div>
+  </div>
+</div>
