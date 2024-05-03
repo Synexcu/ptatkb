@@ -27,8 +27,8 @@ import { cn } from "@/lib/utils";
           Let’s dive into what makes us unique:
           </div>
           <div>
-            <Button className="bg-first hover:bg-first/50">
-              More About Us
+            <Button className="bg-first hover:bg-first/50" >
+              <a href="#about">More About Us</a>
             </Button>
           </div>
         </div>
@@ -36,6 +36,7 @@ import { cn } from "@/lib/utils";
     </div>
 
     <!-- About Us -->
+    <section id="about">
     <div class="min-h-screen flex items-center justify-center">
       <!-- <Image
         src={"/blob-haikei.png"}
@@ -62,7 +63,7 @@ import { cn } from "@/lib/utils";
           to drive innovation, efficiency, and growth.
         </div>
       </div> -->
-
+      
       <div class="flex flex-col">
         <div class="font-bold text-4xl">About Us</div>
         <br>
@@ -70,13 +71,16 @@ import { cn } from "@/lib/utils";
           We are a forward-thinking IT consulting company based in Indonesia,
           specializing in cutting-edge artificial intelligence (AI) technologies.
           <br />
-          Our mission is to empower businesses and individuals by harnessing the power of A
+          Our mission is to empower businesses and individuals by harnessing the power of AI
           to drive innovation, efficiency, and growth.
         </div>
+        </div>
       </div>
-    </div>
+    </section>
+    
 
     <!-- Carousel -->
+    <section id="services">
     <div class="min-h-screen flex items-center bg-second">
       <MaxWidthWrapper className="flex flex-col gap-12">
         <div class="flex flex-col">
@@ -175,8 +179,10 @@ import { cn } from "@/lib/utils";
         </div>
       </MaxWidthWrapper>
     </div>
+    </section>
 
     <!-- Projects -->
+    <section id="project">
     <div class="h-screen flex flex-row">
       <div class="flex-[65] bg-first px-12 py-20">
         <div class="flex flex-col gap-4">
@@ -283,8 +289,10 @@ import { cn } from "@/lib/utils";
         </div>
       </div>
     </div>
+    </section>
 
     <!-- Testimonial -->
+    <section id="testimonies">
     <div class="min-h-screen bg-[#C6D7E8]">
       <div class="container py-12 flex flex-col gap-12">
         <div class="flex flex-col">
@@ -370,8 +378,10 @@ import { cn } from "@/lib/utils";
         </div>
       </div>
     </div>
+    </section>
 
     <!-- Contact -->
+    <section id="contact">
     <div class="grid grid-rows-5 grid-cols-5 items-center gap-8 py-12 bg-[url('/indo.jpeg')] bg-cover text-white">
       <div class="text-4xl font-bold row-span-1 col-span-1 col-start-3 text-center bg-black">Contact Us</div>
       <div class="row-span-1 col-span-1 bg-red-500">Hello</div>
@@ -392,5 +402,6 @@ import { cn } from "@/lib/utils";
         className="max-w-lg bg-transparent rounded-none border-2 border-white placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
       /> -->
     </div>
+    </section>
   </main>
 </Layout>
