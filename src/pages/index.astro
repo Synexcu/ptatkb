@@ -13,27 +13,29 @@ import { cn } from "@/lib/utils";
 <Layout title="Selamat datang di PT Anugrah Teknologi Kecerdasan Buatan">
   <main>
     <!-- Hero -->
-    <div class="bg-[url('/alt.jpg')] bg-no-repeat bg-right opacity-85">
-    <!-- <div class="bg-[url('/alt.png')] bg-no-repeat bg-right"> -->
-      <MaxWidthWrapper className="min-h-screen pt-20 flex">
-        <div
-          class="w-[50%] h-[calc(100vh-5rem)] pt-20 flex flex-col justify-center gap-4"
-        >
-          <div class="text-6xl text-white ">PT. Anugrah Teknologi Kecerdasan Buatan</div>
-          <div class="text-white">
-            Welcome to PT. Anugrah Teknologi Kecerdasan Buatan (PT. ATKB)!
-          We are a forward-thinking company dedicated to advancing the field of Artificial Intelligence (AI) 
-          and empowering businesses and individuals with cutting-edge solutions. 
-          Let’s dive into what makes us unique:
+    <section id="/">
+      <div class="bg-[url('/alt.jpg')] bg-no-repeat bg-right opacity-85">
+      <!-- <div class="bg-[url('/alt.png')] bg-no-repeat bg-right"> -->
+        <MaxWidthWrapper className="min-h-screen pt-20 flex">
+          <div
+            class="w-[50%] h-[calc(100vh-5rem)] pt-20 flex flex-col justify-center gap-4"
+          >
+            <div class="text-6xl text-white ">PT. Anugrah Teknologi Kecerdasan Buatan</div>
+            <div class="text-white">
+              Welcome to PT. Anugrah Teknologi Kecerdasan Buatan (PT. ATKB)!
+            We are a forward-thinking company dedicated to advancing the field of Artificial Intelligence (AI) 
+            and empowering businesses and individuals with cutting-edge solutions. 
+            Let's dive into what makes us unique:
+            </div>
+            <div>
+              <Button className="bg-first hover:bg-first/50" >
+                <a href="#about">More About Us</a>
+              </Button>
+            </div>
           </div>
-          <div>
-            <Button className="bg-first hover:bg-first/50" >
-              <a href="#about">More About Us</a>
-            </Button>
-          </div>
-        </div>
-      </MaxWidthWrapper>
-    </div>
+        </MaxWidthWrapper>
+      </div>
+  </section=>
 
     <!-- About Us -->
     <section id="about">
@@ -50,7 +52,7 @@ import { cn } from "@/lib/utils";
       class="flex-shrink-0 object-cover h-full"
       width={600}
       height={200}
-      alt="Image by gpointstudio on Freepik"
+      alt="by gpointstudio on Freepik"
       class="flex-shrink-0"
     />
       <!-- <div class="grid grid-cols-5 grid-rows-2 grid-flow-col bg-black">
@@ -92,7 +94,7 @@ import { cn } from "@/lib/utils";
             class="bg-white flex flex-col gap-4 px-8 py-16 rounded-2xl items-center"
           >
             <div class="w-20 h-20">
-              <img src="/website.svg">
+              <img src="/website.svg" alt="website">
             </div>
             <div class="text-first text-2xl font-bold text-center">
               Web Development
@@ -105,7 +107,7 @@ import { cn } from "@/lib/utils";
             class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
           >
             <div class="w-20 h-20">
-              <img src="/courses.svg">
+              <img src="/courses.svg" alt="courses">
             </div>
             <div class="text-first text-2xl font-bold text-center">
               IT Training
@@ -119,7 +121,7 @@ import { cn } from "@/lib/utils";
             class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
           >
             <div class="w-20 h-20">
-              <img src="/research.svg">
+              <img src="/research.svg" alt="research">
             </div>
             <div class="text-first text-2xl font-bold text-center">
               Research
@@ -134,7 +136,7 @@ import { cn } from "@/lib/utils";
             class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
           >
             <div class="w-20 h-20">
-              <img src="/journal.svg">
+              <img src="/journal.svg" alt="journal">
             </div>
             <div class="text-first text-2xl font-bold text-center">
               Journal Publishing
@@ -147,7 +149,7 @@ import { cn } from "@/lib/utils";
             class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
           >
             <div class="w-20 h-20">
-              <img src="/education.svg">
+              <img src="/education.svg" alt="education">
             </div>
             <div class="text-first text-2xl font-bold text-center">
               Education Training
@@ -161,7 +163,7 @@ import { cn } from "@/lib/utils";
             class="bg-white flex flex-col gap-4 px-8 py-16 rounded-3xl items-center"
           >
             <div class="w-20 h-20">
-              <img src="/thesis.svg">
+              <img src="/thesis.svg" alt="thesis">
             </div>
             <div class="text-first text-2xl font-bold text-center">
               Thesis Consultation
