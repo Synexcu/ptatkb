@@ -1,0 +1,117 @@
+---
+import { Button } from "@/components/ui/button";
+import { Image } from "astro:assets";
+import { ChevronRight, User } from "lucide-react";
+
+const props = Astro.props 
+---
+
+    <!-- Projects -->
+    <section id="project">
+    <div class="flex flex-row">
+      <div class="flex-[65] bg-first px-12 py-20">
+        <div class="flex flex-col gap-4">
+          <div class="text-7xl text-white">Our Projects</div>
+          <div class="text-white">
+            Throughout our journey, we’ve had the privilege of collaborating on various exciting ventures.
+            From innovative startups to established brands, our portfolio reflects our commitment to excellence.
+            Here’s a glimpse of some remarkable projects:
+          </div>
+          <div>
+            <Button
+              className="bg-second hover:bg-second/50 text-first flex justify-between"
+            >
+              <div>Read More</div>
+              <ChevronRight />
+            </Button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-[127]">
+        <div class="px-32 h-full">
+          <div class="flex-col flex gap-8 justify-center h-full">
+            <div class="flex gap-4">
+              <div
+                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
+              >
+                Sep <br /> 2023
+              </div>
+              <div class="flex-shrink-0 rounded-md">
+                <Image
+                  src={"/PuskesmasKertasemaya.png"}
+                  alt="project1"
+                  width={125}
+                  height={500}
+                  class="rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-first text-2xl font-semibold">
+                  PUSKESMAS KERTASEMAYA
+                </div>
+                <div class="flex flex-1">
+                  At UPTD Puskesmas Kertasemaya, we’ve crafted a dynamic website with a clear mission: to enhance accessibility to essential health information for our local community.
+                  Our commitment lies in digitizing crucial services, ensuring residents can easily access our daily schedules, preventive measures, and community updates.
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
+              >
+                Nov <br /> 2023
+              </div>
+              <div class="flex-shrink-0 rounded-md">
+                <Image
+                  src={"/PuskesmasTerisi.png"}
+                  alt="project1"
+                  width={125}
+                  height={500}
+                  class="rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-first text-2xl font-semibold">
+                  PUSKESMAS TERISI
+                </div>
+                <div class="flex flex-1">
+                  Welcome to UPTD Puskesmas Terisi! Our commitment lies in bridging the gap between healthcare and technology, ensuring that essential health information reaches our local community with ease.
+                  <br> <br>    
+                  At Puskesmas Terisi, we believe that health should be accessible to all,
+                  regardless of physical boundaries. Our digital platform serves as a beacon,
+                  guiding residents toward better well-being.
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
+              >
+                01 <br /> Aug
+              </div>
+              <div class="flex-shrink-0 rounded-md">
+                <Image
+                  src={"/project3.jpeg"}
+                  alt="project1"
+                  width={125}
+                  height={500}
+                  class="rounded-md"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="text-first text-2xl font-semibold">
+                  LOREM IPSUM SI AMET
+                </div>
+                <div class="flex flex-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima repellat, perspiciatis similique ipsam illo ipsum eum
+                  quam at, id provident aspernatur eaque numquam quidem sunt
+                  veniam soluta hic. Autem, minima?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
