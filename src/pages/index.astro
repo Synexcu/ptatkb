@@ -14,69 +14,73 @@ import { cn } from "@/lib/utils";
   <main>
     <!-- Hero -->
     <section id="home">
-      <div class="bg-[url('/alt.jpg')] bg-no-repeat bg-right opacity-85">
-      <!-- <div class="bg-[url('/alt.png')] bg-no-repeat bg-right"> -->
-        <MaxWidthWrapper className="min-h-screen pt-20 flex">
-          <div
-            class="w-[50%] h-[calc(100vh-5rem)] pt-20 flex flex-col justify-center gap-4"
-          >
-            <div class="text-6xl text-white ">PT. Anugrah Teknologi Kecerdasan Buatan</div>
-            <div class="text-white">
-              Welcome to PT. Anugrah Teknologi Kecerdasan Buatan (PT. ATKB)!
-            We are a forward-thinking company dedicated to advancing the field of Artificial Intelligence (AI) 
-            and empowering businesses and individuals with cutting-edge solutions. 
-            Let's dive into what makes us unique:
+      <div class="flex min-w-fit">
+        <div class="flex bg-[url('/alt.jpg')] w-full mx-auto bg-no-repeat bg-right opacity-85 min-[320px]:px-10">
+        <!-- <div class="bg-[url('/alt.png')] bg-no-repeat bg-right"> -->
+          <MaxWidthWrapper className="min-h-screen flex min-[320px]: pt-10">
+            <div
+              class="w-[50%] h-[calc(100vh-5rem)] pt-20 flex flex-col justify-center gap-4"
+            >
+              <div class="text-6xl text-white ">PT. Anugrah Teknologi Kecerdasan Buatan</div>
+              <div class="text-white">
+                Welcome to PT. Anugrah Teknologi Kecerdasan Buatan (PT. ATKB)!
+              We are a forward-thinking company dedicated to advancing the field of Artificial Intelligence (AI) 
+              and empowering businesses and individuals with cutting-edge solutions. 
+              Let's dive into what makes us unique:
+              </div>
+              <div>
+                <Button className="bg-first hover:bg-first/50" >
+                  <a href="#about">More About Us</a>
+                </Button>
+              </div>
             </div>
-            <div>
-              <Button className="bg-first hover:bg-first/50" >
-                <a href="#about">More About Us</a>
-              </Button>
-            </div>
-          </div>
-        </MaxWidthWrapper>
+          </MaxWidthWrapper>
+        </div>
       </div>
-  </section=>
+    </section>
 
     <!-- About Us -->
     <section id="about">
-    <div class="min-h-screen flex items-center justify-center">
-      <!-- <Image
-        src={"/blob-haikei.png"}
-        width={750}
-        height={500}
-        alt="blob"
-        class="flex-shrink-0"
-      /> -->
-      <Image
-      src={"/businesswork.jpg"}
-      class="flex-shrink-0 object-cover h-full"
-      width={600}
-      height={200}
-      alt="by gpointstudio on Freepik"
-      class="flex-shrink-0"
-    />
-      <!-- <div class="grid grid-cols-5 grid-rows-2 grid-flow-col bg-black">
-        <div class="font-bold text-4xl col-span-1 row-span-1 bg-red-400">About Us</div>
-        <div class="col-span-3 row-span-1 bg-blue-400">
-          We are a forward-thinking IT consulting company based in Indonesia,
-          specializing in cutting-edge artificial intelligence (AI) technologies.
-          <br />
-          Our mission is to empower businesses and individuals by harnessing the power of A
-          to drive innovation, efficiency, and growth.
-        </div>
-      </div> -->
-      
-      <div class="flex flex-col">
-        <div class="font-bold text-4xl">About Us</div>
-        <br>
-        <div>
-          We are a forward-thinking IT consulting company based in Indonesia,
-          specializing in cutting-edge artificial intelligence (AI) technologies.
-          <br />
-          Our mission is to empower businesses and individuals by harnessing the power of AI
-          to drive innovation, efficiency, and growth.
-        </div>
-        </div>
+      <div class="min-w-fit">
+        <div class="min-h-screen max-w-screen-xl flex items-center justify-center px-7">
+          <!-- <Image
+            src={"/blob-haikei.png"}
+            width={750}
+            height={500}
+            alt="blob"
+            class="flex-shrink-0"
+          /> -->
+          <Image
+          src={"/businesswork.jpg"}
+          class="flex-shrink-0 object-cover h-full"
+          width={600}
+          height={200}
+          alt="by gpointstudio on Freepik"
+          class="flex-shrink-0"
+        />
+          <!-- <div class="grid grid-cols-5 grid-rows-2 grid-flow-col bg-black">
+            <div class="font-bold text-4xl col-span-1 row-span-1 bg-red-400">About Us</div>
+            <div class="col-span-3 row-span-1 bg-blue-400">
+              We are a forward-thinking IT consulting company based in Indonesia,
+              specializing in cutting-edge artificial intelligence (AI) technologies.
+              <br />
+              Our mission is to empower businesses and individuals by harnessing the power of A
+              to drive innovation, efficiency, and growth.
+            </div>
+          </div> -->
+          
+          <div class="flex flex-col">
+            <div class="font-bold text-4xl">About Us</div>
+            <br>
+            <div>
+              We are a forward-thinking IT consulting company based in Indonesia,
+              specializing in cutting-edge artificial intelligence (AI) technologies.
+              <br />
+              Our mission is to empower businesses and individuals by harnessing the power of AI
+              to drive innovation, efficiency, and growth.
+            </div>
+            </div>
+          </div>
       </div>
     </section>
     
@@ -84,7 +88,7 @@ import { cn } from "@/lib/utils";
     <!-- Carousel -->
     <section id="services">
     <div class="min-h-screen flex items-center bg-second">
-      <MaxWidthWrapper className="flex flex-col gap-12">
+      <MaxWidthWrapper className="flex flex-col gap-12 py-10">
         <div class="flex flex-col">
           <div class="text-first text-xl">Services</div>
           <div class="font-bold text-4xl">Provided Services</div>
@@ -174,18 +178,18 @@ import { cn } from "@/lib/utils";
             </div>
           </div>
         </div>
-        <div class="w-full flex justify-center">
+        <!-- <div class="w-full flex justify-center">
           <Button className="bg-first hover:bg-first/50 rounded-full px-12">
             More Details
           </Button>
-        </div>
+        </div> -->
       </MaxWidthWrapper>
     </div>
     </section>
 
     <!-- Projects -->
     <section id="project">
-    <div class="flex flex-row">
+    <div class="flex min-[320px]:flex-col lg:flex-row">
       <div class="flex-[65] bg-first px-12 py-20">
         <div class="flex flex-col gap-4">
           <div class="text-7xl text-white">Our Projects</div>
@@ -205,8 +209,8 @@ import { cn } from "@/lib/utils";
         </div>
       </div>
       <div class="flex-[127]">
-        <div class="px-32 h-full py-20">
-          <div class="flex-col flex gap-8 justify-center h-full">
+        <div class="flex py-20 min-[320px]:px-3 md:px-10 lg:px-15">
+          <div class="flex-col flex gap-10 justify-center h-full"> <!-- Gap between content -->
             <div class="flex gap-4">
               <div
                 class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
@@ -224,7 +228,9 @@ import { cn } from "@/lib/utils";
               </div>
               <div class="flex flex-col gap-2">
                 <div class="text-first text-2xl font-semibold">
-                  PUSKESMAS KERTASEMAYA
+                  <a href="https://www.pkmkertasemaya.com/" target="_blank" rel="noreferrer">
+                    PUSKESMAS KERTASEMAYA
+                  </a>
                 </div>
                 <div class="flex flex-1">
                   At UPTD Puskesmas Kertasemaya, we’ve crafted a dynamic website with a clear mission: to enhance accessibility to essential health information for our local community.
@@ -249,7 +255,9 @@ import { cn } from "@/lib/utils";
               </div>
               <div class="flex flex-col gap-2">
                 <div class="text-first text-2xl font-semibold">
-                  PUSKESMAS TERISI
+                  <a href="https://www.puskesmasterisi.com/" target="_blank" rel="noreferrer">
+                    PUSKESMAS TERISI
+                  </a>
                 </div>
                 <div class="flex flex-1">
                   Welcome to UPTD Puskesmas Terisi! Our commitment lies in bridging the gap between healthcare and technology, ensuring that essential health information reaches our local community with ease.
@@ -257,33 +265,6 @@ import { cn } from "@/lib/utils";
                   At Puskesmas Terisi, we believe that health should be accessible to all,
                   regardless of physical boundaries. Our digital platform serves as a beacon,
                   guiding residents toward better well-being.
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div
-                class="bg-first px-8 py-6 rounded-md text-xl text-white text-center h-fit"
-              >
-                01 <br /> Aug
-              </div>
-              <div class="flex-shrink-0 rounded-md">
-                <Image
-                  src={"/project3.jpeg"}
-                  alt="project1"
-                  width={125}
-                  height={500}
-                  class="rounded-md"
-                />
-              </div>
-              <div class="flex flex-col gap-2">
-                <div class="text-first text-2xl font-semibold">
-                  LOREM IPSUM SI AMET
-                </div>
-                <div class="flex flex-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima repellat, perspiciatis similique ipsam illo ipsum eum
-                  quam at, id provident aspernatur eaque numquam quidem sunt
-                  veniam soluta hic. Autem, minima?
                 </div>
               </div>
             </div>
@@ -295,7 +276,7 @@ import { cn } from "@/lib/utils";
 
     <!-- Testimonial -->
     <section id="testimonies">
-    <div class="min-h-screen bg-[#C6D7E8]">
+    <div class="flex min-h-screen items-center bg-[#C6D7E8]">
       <div class="container py-12 flex flex-col gap-12">
         <div class="flex flex-col">
           <div class="text-[#326BA4] font-bold text-6xl">Testimonials</div>
@@ -384,9 +365,9 @@ import { cn } from "@/lib/utils";
 
     <!-- Contact -->
     <section id="contact">
-    <div class="grid grid-rows-5 grid-cols-5 items-center gap-8 py-12 bg-[url('/indo.jpeg')] bg-cover text-white">
-      <div class="text-4xl font-bold row-span-1 col-span-1 col-start-3 text-center bg-black">Contact Us</div>
-      <div class="row-span-1 col-span-1 bg-red-500">Hello</div>
+    <div class="flex flex-col items-center gap-8 py-12 bg-[url('/indo.jpeg')] bg-cover text-white">
+      <div class="text-4xl font-bold row-span-1 col-span-1 col-start-3 text-center">Contact Us</div>
+      <div class="row-span-1 col-span-1 bg-red-500">WORK IN PROGRESS</div>
       <!-- <div class="text-4xl font-bold">Contact Us</div>
       <Input
         placeholder="Name"
