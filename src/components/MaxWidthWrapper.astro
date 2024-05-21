@@ -7,10 +7,10 @@ interface Props {
 const { className } = Astro.props;
 ---
 
-<!-- <div class={cn(`mx-auto w-full max-w-screen-xl px-2.5 md:px-20`, className)}>
-  <slot />
-</div> -->
-
-<div class={cn(`mx-auto w-full max-w-screen-xl px-2.5 min-[320px]:px-10 sm:px-20 md:px-20`, className)}>
+<div class={cn(`mx-auto w-full max-w-screen-xl px-2.5 md:px-20`, className)}>
   <slot />
 </div>
+
+<!-- <div class={cn(`mx-auto w-full max-w-screen-xl px-0 min-[320px]:px-10 sm:px-20 md:px-20`, className)}>
+  <slot />
+</div> -->
