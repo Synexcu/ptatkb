@@ -2,12 +2,13 @@
 import "@/styles/globals.css";
 import MaxWidthWrapper from "../components/MaxWidthWrapper.astro";
 import Layout from "../layouts/Layout.astro";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Image } from "astro:assets";
 import { ChevronRight, User } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Mail, Phone } from "lucide-react";
 ---
 
 <Layout title="Selamat datang di PT Anugrah Teknologi Kecerdasan Buatan">
@@ -370,9 +371,21 @@ import { cn } from "@/lib/utils";
 
     <!-- Contact -->
     <section id="contact">
-    <!-- <div class="flex flex-col items-center gap-8 py-12 bg-[url('/indo.jpeg')] bg-cover text-white">
-      <div class="text-4xl font-bold row-span-1 col-span-1 col-start-3 text-center">Contact Us</div>
-      <div class="row-span-1 col-span-1 bg-red-500">WORK IN PROGRESS</div> -->
+    <div class="flex flex-col items-center py-12 bg-[url('/indo.jpeg')] bg-cover text-white">
+      <div class="text-4xl font-bold text-center">Contact Us</div>
+      <div class="text-center content-center pt-5">Interested in working with us? Contact us using the link down below!</div>
+      <div class="text-center content-center pt-8">
+        <a href="mailto:anugrahtechid@gmail.com" target="_blank" rel="noreferrer" class={buttonVariants({ variant: 'invis' })}>
+          <Mail className="mr-2"/>
+          E-mail: anugrahtechid@gmail.com
+        </a>
+      </div>
+      <div class="text-center content-center">  
+        <a href="https://api.whatsapp.com/send?phone=6281295938973&text=Hi%21%20I%20would%20like%20to%20ask" target="_blank" rel="noreferrer" class={buttonVariants({ variant: 'invis' })}>
+          <Phone className="mr-2"/>
+          Phone or WhatsApp: <br class="inline min-[425px]:hidden" /> +62 812-9593-8973 (Indonesia)
+        </a>
+      </div>
       <!-- <div class="text-4xl font-bold">Contact Us</div>
       <Input
         placeholder="Name"
@@ -389,7 +402,7 @@ import { cn } from "@/lib/utils";
         rows={5}
         className="max-w-lg bg-transparent rounded-none border-2 border-white placeholder:text-white focus-visible:ring-0 focus-visible:ring-offset-0"
       /> -->
-    <!-- </div>
-    </section> -->
+    </div>
+    </section>
   </main>
 </Layout>
