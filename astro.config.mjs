@@ -9,6 +9,7 @@ export default defineConfig({
   integrations: [tailwind({
     applyBaseStyles: false
   }), react()],
-  output: "server",
-  adapter: vercel()
+  output: "static",
+  // adapter: vercel()
+  site: "https://ptatkb.idjams.com/"
 });
