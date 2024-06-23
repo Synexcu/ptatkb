@@ -3,34 +3,49 @@ import MaxWidthWrapper from "./MaxWidthWrapper.astro";
 import { Image } from "astro:assets";
 ---
 
-<nav class="h-20 bg-third z-30 shadow-lg min-w-full fixed flex flex-row">
-  <!-- <MaxWidthWrapper className="h-full"> -->
-      <div class="w-[50%] mx-10 justify-between content-center items-center h-full bg-green-500 hidden sm:block">
-        <!-- <div class="flex justify-center items-center"> -->
-          <a href="#home">
-            <Image src={"/logo.png"} width={300} height={300} alt="logo" loading="eager"/>
-          </a>
-        <!-- </div> -->
-      </div>
-      <div class="w-full flex h-full bg-blue-500 md:w-[50%]">
-        <div class="mx-5 flex gap-8 h-full md:justify-end items-center object-scale-down">
-          <div>
-            <a href="#about">About</a>
-          </div>
-          <div>
-            <a href="#services">Services</a>
-          </div>
-          <div>
-            <a href="#project">Project</a>
-          </div>
-          <div>
-            <a href="#testimonies">Testimonies</a>
-          </div>
-          <div>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </div>
-          
-  <!-- </MaxWidthWrapper> -->
-</nav>
+<div class="bg-third h-24 z-30 shadow-lg w-full fixed flex py-1">
+  <MaxWidthWrapper>
+    <div class="flex justify-between items-center">
+      <a href="/">
+        <Image src={"/logo.png"} width={500} height={250} alt="logo" />
+      </a>
+      <nav class="lg:flex gap-4 items-center w-full justify-end hidden">
+        <a
+          href="/about"
+          class="text-lg hover:opacity-75 transition-all duration-300"
+        >
+          About
+        </a>
+        <a
+          href="#services"
+          class="text-lg hover:opacity-75 transition-all duration-300"
+        >
+          Services
+        </a>
+        <a
+          href="#project"
+          class="text-lg hover:opacity-75 transition-all duration-300"
+        >
+          Project
+        </a>
+        <a
+          href="#articles"
+          class="text-lg hover:opacity-75 transition-all duration-300"
+        >
+          Articles
+        </a>
+        <a
+          href="#consultants"
+          class="text-lg hover:opacity-75 transition-all duration-300"
+        >
+          Consultants
+        </a>
+        <a
+          href="#contact"
+          class="text-lg hover:opacity-75 transition-all duration-300"
+          >Contact</a
+        >
+      </nav>
+    </div>
+  </MaxWidthWrapper>
+</div>
