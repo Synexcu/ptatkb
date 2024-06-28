@@ -1,7 +1,7 @@
 ---
+import FloatSocials from "@/components/FloatSocials.astro";
 import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
-import FloatSocials from "@/components/FloatSocials.astro";
 interface Props {
   title: string;
 }
@@ -21,7 +21,9 @@ const { title } = Astro.props;
   </head>
   <body>
     <Navbar />
-    <slot />
+    <div class="pt-24">
+      <slot />
+    </div>
     <FloatSocials />
     <Footer />
   </body>

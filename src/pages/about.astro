@@ -1,0 +1,79 @@
+---
+import "@/styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper.astro";
+import { Button } from "@/components/ui/button";
+---
+
+<Layout title="About Us | PT Anugrah Teknologi Kecerdasan Buatan">
+  <main>
+    <section class="text-6xl bg-gray-500">
+      <MaxWidthWrapper className="py-24 font-bold text-white"
+        >About Us</MaxWidthWrapper
+      >
+    </section>
+    <section>
+      <MaxWidthWrapper className="py-20">
+        <div class="flex flex-col gap-4">
+          <h1 class="font-bold text-4xl">
+            PT. Anugrah Teknologi Kecerdasan Buatan
+          </h1>
+          <p class="text-xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+            similique odio mollitia fugiat et magnam quidem fuga cumque
+            praesentium distinctio est deleniti consequuntur culpa deserunt,
+            beatae optio minima, reprehenderit aperiam.
+          </p>
+          <p class="text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+            quaerat, laborum soluta, a dignissimos commodi placeat voluptas illo
+            at sed animi omnis error labore modi ipsa eaque vel odio similique.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4 mt-12">
+          <h1 class="text-center text-4xl font-bold">Tim Kami</h1>
+          <div class="grid grid-cols-3 gap-12">
+            <div class="flex flex-col w-full h-full gap-4">
+              <div class="bg-blue-200 aspect-square"></div>
+              <p>Komisari</p>
+              <p>Nama</p>
+              <Button className="bg-first rounded-full">Lihat Profil</Button>
+            </div>
+            <div class="flex flex-col w-full h-full gap-4">
+              <div class="bg-blue-200 aspect-square"></div>
+              <p>Komisari</p>
+              <p>Nama</p>
+              <Button className="bg-first rounded-full">Lihat Profil</Button>
+            </div>
+            <div class="flex flex-col w-full h-full gap-4">
+              <div class="bg-blue-200 aspect-square"></div>
+              <p>Komisari</p>
+              <p>Nama</p>
+              <Button className="bg-first rounded-full">Lihat Profil</Button>
+            </div>
+            <div class="flex flex-col w-full h-full gap-4">
+              <div class="bg-blue-200 aspect-square"></div>
+              <p>Komisari</p>
+              <p>Nama</p>
+              <Button className="bg-first rounded-full">Lihat Profil</Button>
+            </div>
+            <div class="flex flex-col w-full h-full gap-4">
+              <div class="bg-blue-200 aspect-square"></div>
+              <p>Komisari</p>
+              <p>Nama</p>
+              <Button className="bg-first rounded-full">Lihat Profil</Button>
+            </div>
+          </div>
+        </div>
+      </MaxWidthWrapper>
+    </section>
+    <section class="bg-gray-300 py-20">
+      <MaxWidthWrapper className="text-xl">
+        &quot; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+        necessitatibus perspiciatis aspernatur nisi repellat. Asperiores rerum
+        explicabo voluptate accusamus dicta, aperiam quam, quasi ea pariatur
+        esse commodi, harum vitae veritatis!&quot;
+      </MaxWidthWrapper>
+    </section>
+  </main>
+</Layout>
