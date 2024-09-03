@@ -8,7 +8,9 @@ image: {
   alt: "A picture of Dr. Mokhammad Ridwan Yudhanegara",
 }
 
-role: Consultants
+role: Journal Publishing Director
+consultantRole: Consultant
+privilege: 2
 # nomorAnggota: 369.32.021086.135
 name: Dr. Mokhammad Ridwan Yudhanegara
 motto: Belajar adalah sebuah petualangan

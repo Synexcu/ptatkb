@@ -1,16 +1,18 @@
 ---
 # layout: "@/layouts/LayoutMember1.astro"
 
-member: Edwin Setiawan Nugraha #searchParams
+member: Dr. Edwin Setiawan Nugraha #searchParams
 
 image: {
   src: "../../edwin.jpg",
   alt: "A picture of Edwin Setiawan Nugraha",
 }
 
-role: Consultants
+role: President Director
+consultantRole: Consultant
+privilege: 1
 # nomorAnggota:
-name: Edwin Setiawan Nugraha
+name: Dr. Edwin Setiawan Nugraha
 email: edwin.nugraha@presdient.ac.id
 provinsi: Jawa Barat
 institusi: President University

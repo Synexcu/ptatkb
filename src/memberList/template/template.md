@@ -11,7 +11,9 @@ image: {
 
 # REQUIRED UNLESS SPECIFIED
 role: Software Engineer
-nomorAnggota: 369.51.102021.058
+consultantRole: Consultant #OPTIONAL
+# privilege: 1 highest, 2 lower, so on.
+nomorAnggota: 369.51.102021.058 #OPTIONAL
 name: Karunia Eka Lestari
 motto: Belajar # OPTIONAL
 email: karunia@fkip.unsika.ac.id
@@ -23,7 +25,7 @@ bidangIlmu: Mathematics and Mathematics Education
 keahlianUtama: Mathematics Education, Education Statistics
 keahlianPenunjang: Correspondence Analysis, Multivariate Analysis, Education Research Methodology
 minatRisetBidang: Correspondence Analysis and Related Methods
-minatPengabdianMasyarakatBidang: Applied Statistics in Education, Tracer Study
+minatPengabdianMasyarakatBidang: Applied Statistics in Education, Tracer Study #OPTIONAL
 
 ## REQUIRED
 profile: Dr. Karunia Eka Lestari menempuh pendidikan S3 Matematika di Institut Teknologi Bandung. Selama studi Doktor di ITB, Karunia dilibatkan dalam beberapa kegiatan riset Kelompok Keahlian Statistika ITB. Karunia saat ini aktif sebagai dosen ASN di Prodi Pendidikan Matematika Universitas Singaperbangsa Karawang. Dosen muda ini beberapa kali menerima Hibah Penelitian Kompetitif Nasional dari Kemenristekdikti. Beberapa hasil penelitiannya telah dipublikasikan di jurnal nasional maupun internasional bereputasi (Q1-Q2), dan memperoleh Hak Kekayaan Intelektual (HKI) Program Komputer berupa Skrip Python pada Analisis Korespondensi. Selain aktif sebagai dosen dan peneliti, Karunia juga aktif menjadi tim editor dan reviewer baik jurnal nasional maupun internasional, serta memiliki pengalaman menulis Buku Ajar mengenai Penelitian Pendidikan Matematika yang telah disitasi sebanyak 2548 kali oleh para peneliti dan praktisi di bidang pendidikan, khususnya pendidikan matematika.

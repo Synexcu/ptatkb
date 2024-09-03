@@ -1,11 +1,10 @@
 ---
-const { frontmatter } = Astro.props;
+const { frontmatter, roleToDisplay } = Astro.props;
 import { slugify } from "../js/utils"
 import { ChevronRight, User, Linkedin } from "lucide-react";
 
 
 const {
-    role,
     name,
     image,
     member
@@ -27,6 +26,8 @@ const {
     // twitter,
 } = frontmatter
 
+const displayRole = frontmatter[roleToDisplay] || frontmatter.role;
+
 console.log(frontmatter);
 
 ---
@@ -37,7 +38,7 @@ console.log(frontmatter);
         
         <h1 class="mt-4 text-2xl font-semibold min-h-16 content-center text-center text-gray-700 capitalize dark:text-white group-hover:text-white">{name}</h1>
         
-        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">{role}</p>
+        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">{displayRole}</p>
     
     </a>
 </div>

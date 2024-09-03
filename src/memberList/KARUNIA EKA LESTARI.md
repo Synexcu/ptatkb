@@ -1,16 +1,19 @@
 ---
 # layout: "@/layouts/LayoutMember1.astro"
 
-member: Karunia Eka Lestari #searchParams
+member: Dr. Karunia Eka Lestari #searchParams
 
 image: {
   src: "https://www.denpasarinstitute.com/uploads/anggota/riset_212105020517_DrKaruniaEkaLestari.jpg",
   alt: "A picture of Karunia Eka Lestari",
 }
 
-role: Consultants
+role: Training Director
+consultantRole: Consultant
+privilege: 3
 # nomorAnggota: 369.51.102021.058
-name: Karunia Eka Lestari
+name: Dr. Karunia Eka Lestari
+# motto:
 email: karunia@fkip.unsika.ac.id
 provinsi: Jawa Barat
 institusi: Universitas Singaperbangsa Karawang

@@ -3,7 +3,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper.astro";
 import { Image } from "astro:assets";
 ---
 
-<div class="bg-third h-24 z-30 shadow-lg w-full fixed flex py-1">
+<!-- <div class="bg-third h-24 z-30 shadow-lg w-full fixed flex py-1">
   <MaxWidthWrapper>
     <div class="flex justify-between items-center">
       <a href="/">
@@ -35,7 +35,7 @@ import { Image } from "astro:assets";
           Articles
         </a>
         <a
-          href="#consultants"
+          href="/consultants"
           class="text-lg hover:opacity-75 transition-all duration-300"
         >
           Consultants
@@ -48,4 +48,24 @@ import { Image } from "astro:assets";
       </nav>
     </div>
   </MaxWidthWrapper>
-</div>
+</div> -->
+
+<nav class="h-24 bg-third z-30 shadow-lg w-full fixed flex flex-row">
+  <MaxWidthWrapper>
+    <div class="flex justify-between items-center h-full">
+      <div class="flex justify-center items-center hidden md:block">
+        <a href="/">
+          <Image src={"/logo.png"} width={300} height={300} alt="logo" loading="eager"/>
+        </a>
+      </div>
+      <div class="flex gap-4 items-center w-full justify-center min-[425px]:justify-around mx-2 sm:justify-around md:justify-end lg:gap-8">
+          <a href="/about" class="text-xs sm:text-sm lg:text-lg hover:opacity-75 transition-all duration-300">About</a>
+          <a href="/#services" class="text-xs sm:text-sm lg:text-lg hover:opacity-75 transition-all duration-300">Services</a>
+          <a href="/#project" class="text-xs sm:text-sm lg:text-lg hover:opacity-75 transition-all duration-300">Project</a>
+          <a href="/#articles" class="text-xs sm:text-sm lg:text-lg hover:opacity-75 transition-all duration-300">Articles</a>
+          <a href="/consultants" class="text-xs sm:text-sm lg:text-lg hover:opacity-75 transition-all duration-300">Consultants</a>
+          <a href="/#contact" class="text-xs sm:text-sm lg:text-lg hover:opacity-75 transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </MaxWidthWrapper>
+</nav>

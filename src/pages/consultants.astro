@@ -1,0 +1,42 @@
+---
+import "@/styles/globals.css";
+import Layout from "../layouts/Layout.astro";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper.astro";
+import { Button } from "@/components/ui/button";
+import MemberCards from "@/components/MemberCard.astro";
+
+const allCardsData = await Astro.glob("../memberList/*.md");
+const filteredCardsData = allCardsData.filter(post => post.frontmatter.consultantRole);
+
+// Sort the cards by privilege (higher number first)
+const sortedCardsData = filteredCardsData.sort((a, b) => {
+  return a.frontmatter.privilege - b.frontmatter.privilege;
+});
+---
+
+<Layout title="About Us | PT Anugrah Teknologi Kecerdasan Buatan">
+  <main>
+    <!-- Consultants -->
+    <section id="consultants" class="bg-white py-20 dark:bg-gray-900">
+      <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">CONSULTANTS</h1>
+  
+          <!-- <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+          </p> -->
+  
+          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+            {
+              sortedCardsData.map((post) => (
+                <MemberCards
+                  frontmatter={post.frontmatter}
+                  roleToDisplay="consultantRole"
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
