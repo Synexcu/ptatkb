@@ -4,7 +4,7 @@
 member: Jonathan Pirtahap Pascalis Siboro #searchParams
 
 image: {
-  src: "https://media.licdn.com/dms/image/D5603AQGNU9FlkJFwag/profile-displayphoto-shrink_800_800/0/1721043473015?e=1727913600&v=beta&t=Zdc9v6nOQVc6KJ5gzb4YsRQ9RWpbwvXFOnzOX-GNL5s",
+  src: "../../jonathan.jpg",
   alt: "A picture of a coder",
 }
 
